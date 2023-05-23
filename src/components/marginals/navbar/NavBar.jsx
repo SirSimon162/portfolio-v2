@@ -43,7 +43,7 @@ const NavBar = () => {
     <Nav>
       <NavContainer>
         <LogoContainer>
-          <Logo>Anmol</Logo>
+          <Logo href={navbar.logo.link}>Anmol</Logo>
           <LogoDuplicate>Anmol</LogoDuplicate>
         </LogoContainer>
 

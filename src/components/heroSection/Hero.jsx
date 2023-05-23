@@ -43,10 +43,10 @@ function Hero() {
         </div>
         <div className="flex flex-col justify-end w-[20vw] min-w-[200px] sm:h-[20vw] min-h-[190px] border-2 border-[#f5eee6] self-end items-end md:items-start justify-self-end mb-[5vw] p-[20px] mt-[5px] md:mt-[0px]">
           <ul className="text-[#f5eee6] font-Kanit font-normal text-[15px] sm:text-[20px] text-end md:text-start">
-            <li>About Me</li>
-            <li>Tech Stack</li>
-            <li>Projects</li>
-            <li>Designs</li>
+            <li><a href="/about">About Me</a></li>
+            <li><a href="/techstack">Tech Stack</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/designs">Designs</a></li>
           </ul>
         </div>
       </div>

@@ -119,7 +119,7 @@ export const LogoContainer = styled.div`
 `}
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.a`
   ${tw`
     text-[#f5eee6]
     text-[25px]
