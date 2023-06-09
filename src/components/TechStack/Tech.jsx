@@ -70,7 +70,7 @@ function Tech({ icon }) {
 
   if (IconComponent) {
     return (
-      <div className="text-white">
+      <div className="text-white border-white border-[2px] text-3xl p-3 rounded-xl">
         <IconComponent />
       </div>
     );

@@ -28,7 +28,7 @@ function TechStack() {
   return (
     <>
       <Heading>Tech Stack</Heading>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-9 py-8 w-screen ml-[30px] pr-[30px]">
+      <div className="grid grid-cols-2 sm:grid-cols-5 gap-9 py-8 w-screen ml-[30px] pr-[70px]">
         {techStackIcons.map((icon, index) => (
           <Tech key={index} icon={icon} />
         ))}
