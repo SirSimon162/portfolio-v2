@@ -1,6 +1,7 @@
 import React from "react";
 import Heading from "../components/shared/Heading";
 import Tech from "../components/TechStack/Tech";
+import { TechStackContainer } from "../styles/pagesStyles/techstack.styles";
 
 function TechStack() {
   const techStackIcons = [
@@ -28,11 +29,11 @@ function TechStack() {
   return (
     <>
       <Heading>Tech Stack</Heading>
-      <div className="grid grid-cols-2 sm:grid-cols-5 gap-9 py-8 w-screen ml-[30px] pr-[70px]">
+      <TechStackContainer>
         {techStackIcons.map((icon, index) => (
           <Tech key={index} icon={icon} />
         ))}
-      </div>
+      </TechStackContainer>
     </>
   );
 }
