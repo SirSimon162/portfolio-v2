@@ -24,6 +24,7 @@ function TechStack() {
     "illustrator",
     "photoshop",
     "figma",
+    "notion",
   ];
 
   return (

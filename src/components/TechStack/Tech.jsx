@@ -21,6 +21,7 @@ import {
   SiFigma,
   SiMongodb,
   SiExpress,
+  SiNotion,
 } from "react-icons/si";
 import {
   TechContainer,
@@ -107,6 +108,10 @@ function Tech({ icon }) {
     case "express":
       IconComponent = SiExpress;
       iconText = "Express.js";
+      break;
+    case "notion":
+      IconComponent = SiNotion;
+      iconText = "Notion";
       break;
     default:
       break;
