@@ -6,7 +6,7 @@ export const TechContainer = styled.div`
     flex
     items-center
     gap-x-3
-    text-white
+    text-[#f5eee6]
     border-white
     border-[2px]
     text-sm
