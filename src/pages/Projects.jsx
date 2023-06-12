@@ -14,8 +14,9 @@ import {
   RightCarouselButton,
   CarouselItem,
   Img,
+  Title,
   TextBox,
-  Designation,
+  Description,
   Container,
   Item,
 } from "../styles/pagesStyles/projects.styles";
@@ -158,9 +159,9 @@ function ItemContainer({ title, desc, img }) {
   return (
     <Item>
       <Img src={img} alt="Past-Speaker-Image" />
-      <h1>{title}</h1>
+      <Title>{title}</Title>
       <TextBox>
-        <Designation>{desc}</Designation>
+        <Description>{desc}</Description>
       </TextBox>
     </Item>
   );
