@@ -3,7 +3,10 @@ import React, { useState, useEffect, useCallback } from "react";
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
+  BsGithub,
 } from "react-icons/bs";
+
+import { BiLinkExternal } from "react-icons/bi";
 
 import Speakers from "../config/projects";
 
@@ -155,13 +158,21 @@ const Carousel = ({ children }) => {
   );
 };
 
-function ItemContainer({ title, desc, img }) {
+function ItemContainer({ title, desc, img, demo, github }) {
   return (
     <Item>
       <Img src={img} alt="Past-Speaker-Image" />
       <Title>{title}</Title>
       <TextBox>
         <Description>{desc}</Description>
+        <div className="text-[#f5eee6] text-lg sm:text-2xl flex items-center justify-center gap-3 sm:mt-3 mt-1">
+          <a href={demo}>
+            <BiLinkExternal />
+          </a>
+          <a href={github}>
+            <BsGithub />
+          </a>
+        </div>
       </TextBox>
     </Item>
   );
@@ -178,6 +189,8 @@ const Projects = () => {
               title={value.title}
               desc={value.desc}
               img={value.img}
+              demo={value.demo}
+              github={value.github}
             />
           ))}
         </Carousel>
