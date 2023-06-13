@@ -166,10 +166,10 @@ function ItemContainer({ title, desc, img, demo, github }) {
       <TextBox>
         <Description>{desc}</Description>
         <div className="text-[#f5eee6] text-lg sm:text-2xl flex items-center justify-center gap-3 sm:mt-3 mt-1">
-          <a href={demo}>
+          <a href={demo} target="blank__">
             <BiLinkExternal />
           </a>
-          <a href={github}>
+          <a href={github} target="blank__">
             <BsGithub />
           </a>
         </div>
