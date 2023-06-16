@@ -5,21 +5,35 @@ function Designs() {
   return (
     <div>
       <Heading>Designs</Heading>
-      <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+      <div className="py-8 ml-[30px] pr-[30px]">
         <div className="-m-1 flex flex-wrap md:-m-2">
           <div className="flex w-1/2 flex-wrap">
-            <div className="w-1/2 p-1 md:p-2">
+            <div className="w-1/4 p-1 md:p-2">
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
               />
             </div>
-            <div className="w-1/2 p-1 md:p-2">
+            <div className="w-1/4 p-1 md:p-2">
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp"
+              />
+            </div>
+            <div className="w-1/4 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
+              />
+            </div>
+            <div className="w-1/4 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp"
               />
             </div>
             <div className="w-full p-1 md:p-2">
@@ -38,14 +52,28 @@ function Designs() {
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp"
               />
             </div>
-            <div className="w-1/2 p-1 md:p-2">
+            <div className="w-1/4 p-1 md:p-2">
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
                 src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp"
               />
             </div>
-            <div class="w-1/2 p-1 md:p-2">
+            <div class="w-1/4 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"
+              />
+            </div>
+            <div class="w-1/4 p-1 md:p-2">
+              <img
+                alt="gallery"
+                className="block h-full w-full rounded-lg object-cover object-center"
+                src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp"
+              />
+            </div>
+            <div class="w-1/4 p-1 md:p-2">
               <img
                 alt="gallery"
                 className="block h-full w-full rounded-lg object-cover object-center"
