@@ -168,7 +168,7 @@ export const SmLinks = styled.div`
 
 export const Line = styled.div`
   ${tw`
-  md:h-[30%]
+  md:h-[25%]
   h-[5px]
   rounded-lg
   bg-[#f5eee6]

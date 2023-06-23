@@ -5,6 +5,9 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import {
+  SiHashnode
+} from "react-icons/si";
+import {
   BgContainerTop,
   BgText,
   BgContainerBottom,
@@ -68,6 +71,7 @@ function Hero() {
         <AiFillGithub className="cursor-pointer" />
         <AiFillLinkedin className="cursor-pointer" />
         <AiFillTwitterCircle className="cursor-pointer" />
+        <SiHashnode className="cursor-pointer"/>
         <Line></Line>
       </SmLinks>
     </div>
