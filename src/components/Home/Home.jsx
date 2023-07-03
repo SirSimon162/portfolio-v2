@@ -4,9 +4,7 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
 } from "react-icons/ai";
-import {
-  SiHashnode
-} from "react-icons/si";
+import { SiHashnode } from "react-icons/si";
 import {
   BgContainerTop,
   BgText,
@@ -22,6 +20,7 @@ import {
   SmLinks,
   Line,
 } from "../../styles/componentStyles/hero.styles";
+import SmLink from "../../config/sm_link";
 
 function Hero() {
   return (
@@ -68,10 +67,18 @@ function Hero() {
       </ContentContainer>
       <SmLinks>
         <Line></Line>
-        <AiFillGithub className="cursor-pointer" />
-        <AiFillLinkedin className="cursor-pointer" />
-        <AiFillTwitterCircle className="cursor-pointer" />
-        <SiHashnode className="cursor-pointer"/>
+        <a href={SmLink.GitHub} target="__blank">
+          <AiFillGithub className="cursor-pointer" />
+        </a>
+        <a href={SmLink.LinkedIn} target="__blank">
+          <AiFillLinkedin className="cursor-pointer" />
+        </a>
+        <a href={SmLink.Twitter} target="__blank">
+          <AiFillTwitterCircle className="cursor-pointer" />
+        </a>
+        <a href={SmLink.HashNode} target="__blank">
+          <SiHashnode className="cursor-pointer" />
+        </a>
         <Line></Line>
       </SmLinks>
     </div>

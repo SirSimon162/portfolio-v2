@@ -157,7 +157,8 @@ export const SmLinks = styled.div`
   md:h-screen
   items-center
   justify-center
-  text-3xl
+  text-xl
+  sm:text-3xl
   gap-y-5
   pt-6
   sm:px-0
@@ -173,6 +174,6 @@ export const Line = styled.div`
   rounded-lg
   bg-[#f5eee6]
   md:w-[5px]
-  w-[20%]
+  w-[25%]
 `}
 `;

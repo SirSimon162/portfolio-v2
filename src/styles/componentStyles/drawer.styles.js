@@ -77,3 +77,22 @@ export const Content = styled.div`
     overflow-y-auto
 `}
 `;
+
+export const Btn = styled.button`
+  ${tw`
+    font-Kanit
+    font-medium
+    text-[#f5eee6]
+    bg-[#1a1a1a]
+    border-[3px]
+    border-[#f5eee6]
+    rounded-[16px]
+    cursor-pointer
+    transition-all
+    hover:bg-[#f5eee6]
+    hover:text-[#1a1a1a]
+    py-[6px]
+    w-[120px]
+`}
+`;
+

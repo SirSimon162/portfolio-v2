@@ -8,7 +8,7 @@ import {
   ContentSectionDivTwo,
   Close,
 } from "../../../styles/componentStyles/drawer.styles";
-
+import ContactForm from "./ContactForm";
 import Heading from "../../shared/Heading";
 
 function Drawer(props) {
@@ -22,9 +22,7 @@ function Drawer(props) {
             <ContentSectionDivTwo>
               <Content>
                 <Heading>Contact Me</Heading>
-                <form>
-                  
-                </form>
+                <ContactForm/>
               </Content>
             </ContentSectionDivTwo>
           </ContentSectionDiv>
