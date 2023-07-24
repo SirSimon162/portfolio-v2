@@ -1,10 +1,25 @@
 import React from "react";
 import Heading from "../components/shared/Heading";
-import { DesignsContainer, HalfContainer, BiggerContainer, SmallerContainer, UIContainer, BannerContainer, PosterContainer, Image } from "../styles/pagesStyles/designs.styles";
+import {
+  DesignsContainer,
+  HalfContainer,
+  BiggerContainer,
+  SmallerContainer,
+  UIContainer,
+  BannerContainer,
+  PosterContainer,
+  Image,
+} from "../styles/pagesStyles/designs.styles";
+
+import { motion } from "framer-motion";
 
 function Designs() {
   return (
-    <>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <Heading>Designs</Heading>
       <DesignsContainer>
         <HalfContainer>
@@ -16,7 +31,8 @@ function Designs() {
               />
             </UIContainer>
             <BannerContainer>
-              <Image isCover
+              <Image
+                isCover
                 src="https://res.cloudinary.com/dmofs5r4h/image/upload/v1687552986/Portfolio/Designs/HockeyWC_bw4xvb.jpg"
                 alt="img"
               />
@@ -64,7 +80,8 @@ function Designs() {
               />
             </UIContainer>
             <BannerContainer>
-              <Image isCover
+              <Image
+                isCover
                 src="https://res.cloudinary.com/dmofs5r4h/image/upload/v1687553038/Portfolio/Designs/Sahibzade-01_yyh8bd.jpg"
                 alt="img"
               />
@@ -104,7 +121,7 @@ function Designs() {
           </SmallerContainer>
         </HalfContainer>
       </DesignsContainer>
-    </>
+    </motion.div>
   );
 }
 

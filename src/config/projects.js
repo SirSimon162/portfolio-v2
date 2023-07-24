@@ -17,7 +17,7 @@ const ProjectImages = {
     },
     {
       img: "https://res.cloudinary.com/dmofs5r4h/image/upload/v1686554154/Portfolio/HN_oxcq8d.jpg",
-      title: "HackNIT 4.0",
+      title: "HackNITR 4.0",
       desc: "I proudly contributed to HackNITR, the largest student-run hackathon in India, with over 5000 registrations. Our team utilized an impressive tech stack including ReactJS, Tailwind CSS, Styled Components and Babel. ",
       demo : "https://www.hacknitr.com/",
       github : "https://github.com/dscnitrourkela/project-oregano",

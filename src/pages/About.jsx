@@ -16,9 +16,15 @@ import {
   EducationDetail,
 } from "../styles/pagesStyles/about.styles";
 
+import { motion } from "framer-motion";
+
 function About() {
   return (
-    <div>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <Heading>About Me</Heading>
       <AboutContainer>
         <Description>
@@ -85,7 +91,7 @@ function About() {
           </Education>
         </EducationList>
       </AboutContainer>
-    </div>
+    </motion.div>
   );
 }
 

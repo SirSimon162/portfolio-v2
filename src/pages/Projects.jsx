@@ -24,6 +24,8 @@ import {
   Item,
 } from "../styles/pagesStyles/projects.styles";
 
+import { motion } from "framer-motion";
+
 // ArrowLeft
 const ArrowLeft = () => (
   <p className="text-[#f5eee6]">
@@ -180,7 +182,11 @@ function ItemContainer({ title, desc, img, demo, github }) {
 
 const Projects = () => {
   return (
-    <>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    >
       <Heading>Projects</Heading>
       <Container>
         <Carousel>
@@ -195,7 +201,7 @@ const Projects = () => {
           ))}
         </Carousel>
       </Container>
-    </>
+    </motion.div>
   );
 };
 
