@@ -23,6 +23,13 @@ const ProjectImages = {
       github : "https://github.com/dscnitrourkela/project-oregano",
     },
     {
+      img: "https://res.cloudinary.com/dmofs5r4h/image/upload/v1690914004/Portfolio/home_TubeFetch_aoeuk7.jpg",
+      title: "TubeFetch",
+      desc: "TubeFetch is a website made using Next Js, Tailwind CSS and YouTube API which helps users to search and watch their favorite YouTube videos without any distractions/irrelevant recommendatons without login.",
+      demo : "https://tube-fetch.vercel.app/",
+      github : "https://github.com/SirSimon162/TubeFetch",
+    },
+    {
       img: "https://res.cloudinary.com/dmofs5r4h/image/upload/v1686554155/Portfolio/githubfinder_djeuin.jpg",
       title: "Github Finder",
       desc: "Developed a web app using the GitHub API that allows users to search for GitHub profiles based on usernames. Users can explore the details of each profile. I used ReactJS, Tailwind CSS, and Daisy UI in this project.",
