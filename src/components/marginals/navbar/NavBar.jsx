@@ -47,7 +47,7 @@ const NavBar = () => {
           <LogoDuplicate>Anmol</LogoDuplicate>
         </LogoContainer>
 
-        <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} />
+        <StyledHamburger menuOpen={menuOpen} onClick={toggleMenuOpen} aria-label="hamburger icon"/>
 
         <NavLinks className={` ${menuOpen ? "open-nav" : "closed-nav"}`}>
           {navbar.Links.map((link) => (
@@ -58,7 +58,7 @@ const NavBar = () => {
             </NavLinksContainer>
           ))}
           <BtnContainer onClick={handleDrawerOpen}>
-            <Btn>Contact Me</Btn>
+            <Btn aria-label="Contact me button">Contact Me</Btn>
             <BtnDuplicate>Contact Me</BtnDuplicate>
           </BtnContainer>
         </NavLinks>

@@ -67,16 +67,16 @@ function Hero() {
       </ContentContainer>
       <SmLinks>
         <Line></Line>
-        <a href={SmLink.GitHub} target="__blank">
+        <a href={SmLink.GitHub} target="__blank" aria-label="GitHub ID">
           <AiFillGithub className="cursor-pointer" />
         </a>
-        <a href={SmLink.LinkedIn} target="__blank">
+        <a href={SmLink.LinkedIn} target="__blank" aria-label="LinkedIn ID">
           <AiFillLinkedin className="cursor-pointer" />
         </a>
-        <a href={SmLink.Twitter} target="__blank">
+        <a href={SmLink.Twitter} target="__blank" aria-label="Twitter ID">
           <AiFillTwitterCircle className="cursor-pointer" />
         </a>
-        <a href={SmLink.HashNode} target="__blank">
+        <a href={SmLink.HashNode} target="__blank" aria-label="HashNode Blog">
           <SiHashnode className="cursor-pointer" />
         </a>
         <Line></Line>
