@@ -8,9 +8,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Kanit: ['Kanit', ...defaultTheme.fontFamily.sans],
+        Bricolage: ['Bricolage Grotesque', ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: ["cmyk", "night"],
+  },
 }

@@ -1,26 +1,37 @@
-import React from "react";
-import { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import NavBar from "./components/marginals/navbar/NavBar";
-import Container from "./components/shared/Container";
-import Footer from "./components/marginals/footer/Footer";
-import MenuContext from "./components/marginals/navbar/MenuContext";
-import AnimatedRoutes from "./components/Routes/AnimatedRoutes";
+import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import HomePage from "./HomePage";
+import ProjectsPage from "./ProjectsPage";
+import Loader from "./components/Loader";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const toggleMenuOpen = () =>
-    menuOpen ? setMenuOpen(false) : setMenuOpen(true);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <Router>
-      <MenuContext.Provider value={{ menuOpen, toggleMenuOpen }}>
-        <NavBar />
-        <Container>
-          <AnimatedRoutes />
-        </Container>
-        <Footer />
-      </MenuContext.Provider>
-    </Router>
+    <div className="font-Bricolage">
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="max-w-4xl mx-auto flex flex-col items-center gap-4">
+          <Navbar />
+          <Router>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/home" element={<HomePage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+            </Routes>
+          </Router>
+          <Footer />
+        </div>
+      )}
+    </div>
   );
 }
 
