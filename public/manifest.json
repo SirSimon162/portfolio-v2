@@ -11,5 +11,15 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Portfolio of Anmol Pattnayak, MERN Stack Developer, student at NIT Rourkela, showcasing projects and work.",
+  "shortcuts": [ 
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "View Anmol Pattnayak's web development projects",
+      "url": "/projects",
+      "icons": [{ "src": "favicon.png", "sizes": "1080x1080", "type": "image/png" }]
+    }
+  ]
 }
