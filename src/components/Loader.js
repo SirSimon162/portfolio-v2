@@ -8,7 +8,7 @@ const Loader = () => {
     const timers = lines.map((_, index) =>
       setTimeout(() => {
         setVisibleLines((prev) => prev + 1);
-      }, index * 300)
+      }, index * 1000)
     );
 
     return () => timers.forEach((timer) => clearTimeout(timer));
@@ -40,7 +40,7 @@ const Loader = () => {
 
   return (
     <div
-      className={`flex items-center justify-center min-h-screen bg-gray-100 transition-opacity duration-1000 ${
+      className={`flex items-center justify-center min-h-screen bg-gray-100 transition-opacity duration-3000 ${
         fadeOut ? "opacity-0" : "opacity-100"
       }`}
     >
