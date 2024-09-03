@@ -1,4 +1,5 @@
 function Hero() {
+  //Hey
   return (
     <div className="hero">
       <div className="hero-content flex-col-reverse md:flex-row-reverse">
