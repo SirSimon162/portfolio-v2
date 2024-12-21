@@ -1,7 +1,16 @@
 import React from "react";
-import { FaAward, FaBriefcase, FaCertificate } from "react-icons/fa";
+import { FaAward, FaBriefcase, FaCertificate, FaCode } from "react-icons/fa";
 
 function About() {
+  const highlight = [
+    {
+      icon: <FaCode />,
+      title: "Batch Systems",
+      location: "San Francisco/Remote",
+      description:
+        "Engineered internal tools using JavaScript and Next.js, enhancing operational efficiency and functionality during a 2-month internship. Crafted dynamic components and pixel perfect interfaces company's clients",
+    }
+  ];
   const achievements = [
     {
       title: "Organized HackNITR 4.0",
@@ -57,6 +66,24 @@ function About() {
         My Journey: Highlights & Honors ✨
       </p>
       <p className="text-sm md:text-lg font-light mb-8">The "Wait a Minute, How Did I Do That?" Files</p>
+      <div className="mb-12">
+        <h2 className="text-xl md:text-2xl font-semibold mb-4">Major Highlight 🧑‍💻</h2>
+        <div className="grid grid-cols-1 gap-6">
+          {highlight.map((achievement, index) => (
+            <div
+              className="bg-base-100 shadow-sm p-4 rounded-lg border-l-4 border-base-content"
+              key={index}
+            >
+              <div className="flex items-center gap-2">
+                <div className="text-xl">{achievement.icon}</div>
+                <h3 className="text-xl font-semibold">{achievement.title}</h3>
+              </div>
+              <p className="text-md font-light">{achievement.location}</p>
+              <p className="mt-2">{achievement.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="mb-12">
         <h2 className="text-xl md:text-2xl font-semibold mb-4">Timeline ⌛</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

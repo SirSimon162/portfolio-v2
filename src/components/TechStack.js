@@ -9,7 +9,9 @@ import {
   FaBootstrap,
   FaPython,
   FaNodeJs,
+  FaAws
 } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { DiJavascript } from "react-icons/di";
 import {
   SiTailwindcss,
@@ -47,6 +49,8 @@ const techStack = [
   { name: "Illustrator", icon: <SiAdobeillustrator /> },
   { name: "Photoshop", icon: <SiAdobephotoshop /> },
   { name: "Notion", icon: <SiNotion /> },
+  { name: "Golang", icon: <FaGolang /> },
+  { name: "AWS", icon: <FaAws /> },
 ];
 
 function TechStack() {
